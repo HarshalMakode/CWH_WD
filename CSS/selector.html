@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style>
+        /* This is element selector */
+        div{
+            background-color: red;
+        }
+
+        /* This is class selector */
+        .blue{
+            background-color: blue;
+        }
+
+        /* This is id selector */
+        #green{
+            background-color: green;
+        }
+
+        /* This is child selector */
+        div > p {
+            background-color: yellow;
+        }
+
+        /* This is Descendant selector */
+        div p {
+            background-color: orange;
+        }
+
+        /* Universal selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector */
+        a:visited {
+            color: blue;
+        }
+
+        a:link {
+            color: red;
+        }
+
+        a:active {
+            color: green;
+            background-color: black;
+        }
+
+        a:hover {
+            color: green;
+        }
+
+        p:first-child {
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div>this is first div</div>
+    <div class="blue">This is second div</div>    
+    <div id="green">This is third div</div>
+
+    <div>
+        <p>This is forth div</p>
+        <p>This is forth div</p>
+    </div>
+
+     <div>
+        <article>
+            <p>This is Fifth div</p>
+            <p>This is Fifth div</p>
+        </article>
+    </div>
+
+    <a href="https://www.google.com/">Google</a>
+    <a href="https://www.google1.com/">Google</a>
+
+</body>
+</html>
