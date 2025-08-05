@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Box Model</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            .box1 {
+                color: red;
+                background-color: aquamarine;
+                padding: 10px;
+                margin: 10px;
+                border: 2px solid blue;
+                width: 150px;
+                height: 50px;
+                box-sizing: border-box;  /*this will include border, padding and content size*/
+            }
+
+            .box2 {
+                color: red;
+                background-color: aquamarine;
+                padding: 10px;
+                margin: 25px;
+                border: 2px solid blue;
+                width: 150px;
+                height: 50px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="box1">This is box one</div>
+        <div class="box2">This is box two</div>  <!-- Margin collapse: max margin will e consider -->
+    </body>
+</html>
