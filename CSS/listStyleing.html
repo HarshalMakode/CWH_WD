@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS List</title>
+    <style>
+        .nav1 ul li {
+            list-style: devanagari;
+            background-color: aquamarine;
+            border: 2px solid black;
+            list-style-type: "🐵";
+        }
+
+        .nav2 ul li {
+            list-style: devanagari;
+            /* list-style-position: inside; */
+            background-color: #00ffff;
+            /* list-style-image: url("https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif"); */
+            list-style: disc inside url("https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif");
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav1">
+        <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <nav class="nav2">
+        <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</body>
+</html>
