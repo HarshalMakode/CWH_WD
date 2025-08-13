@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+
+        :root{
+            --primary-color: #061872cc;
+            --text-color: white;
+            --secondary-color: #6ea5fccc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body{
+            background-color: var(--secondary-color);
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav {
+            background-color: var(--primary-color);
+            padding: 12px 0;
+        }
+
+        nav ul {
+            display: inline-block;
+        }
+
+        nav ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 0 23px;
+            font-weight: bolder;
+        }
+
+        nav ul li a {
+            color: var(--text-color);
+            text-decoration: none;
+        }
+
+        main {
+            margin-top: 43px;
+            padding: 20px;
+            min-height: calc(100vh - 120px);
+        }
+
+        .box {
+            background-color: var(--primary-color);
+            height: auto;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .box1, .box2 {
+            background-color: aquamarine;
+            width: 30%;
+            height: 300px;
+            display: inline-block;
+            margin: 40px;
+            vertical-align: top;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            padding: 10px;
+        }
+
+        .ball {
+            background-color: chocolate;
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            border-radius: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="box">
+            <div class="box1"></div>
+            <div class="box2"></div>
+        </div>
+
+        <div class="ball"></div>
+    </main>
+
+    <main>
+        <div class="box">
+            <div class="box1"></div>
+            <div class="box2"></div>
+        </div>
+
+        <div class="ball"></div>
+    </main>
+
+    <footer>
+        &copy; 2025 Harshal Makode. All rights reserved.
+    </footer>
+    
+</body>
+</html>
