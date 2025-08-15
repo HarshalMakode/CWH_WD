@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px 20px;
+            position: fixed;
+            width: 98%;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .logo img {
+            width: 150px;
+            height: auto;
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-right: 20px;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+
+        a.dropdown::after {
+            content: "\25BC"; 
+            font-size: 12px;
+            margin-left: 5px;
+            position: relative;
+            top: -1px;
+        }
+
+        .btn {
+            background-color: white;
+            padding: 8px 19px;
+            border: 2px solid black;
+            border-radius: 4px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .container {
+            background-color: black;
+            height: 1000px;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="Frame-1-2.png" alt="Logo">
+            </div>
+
+            <ul>
+                <li><a href="#" class="dropdown">Product</a></li>
+                <li><a href="#" class="dropdown">Pricing</a></li>
+                <li><a href="#" class="dropdown">Resources</a></li>
+                <li><a href="#" class="dropdown">Our company</a></li>
+                <li><button class="btn">BUY NOW</button></li>
+                <li><img src="wwwicon.png" alt="Language" width="15px"><span style="font-weight: bold; margin-left: 5px;">English</span></li>
+                <li><img src="search.jpg" alt="Search" width="15px"></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container"></main>
+</body>
+</html>

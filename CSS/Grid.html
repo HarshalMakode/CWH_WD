@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+
+        .container1 {
+            width: 100vw;
+            height: 100vh;
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr 1fr;
+            /* align-items: center;
+            justify-items: center; */
+            gap: 10px;
+        }
+
+        .item {
+            border: 2px solid red;
+        }
+
+        .item-1 {
+            /* grid-row-start: 2;
+            grid-row-end: 3; */
+            grid-row: 2/3;  /* rowline */
+            grid-column: 2/3; /* columnline */
+        }
+
+        .item-4 {
+            grid-row: 1/2;
+            grid-column: 1/2;
+        }
+
+        .container2 {
+            border: 2px solid black;
+            display: grid;
+            grid-template-areas: "nav nav nav"
+                                 "sideleft article sideright"
+                                 "foot foot foot";
+        }
+
+        .item1 {
+            border: 2px solid red;
+            height: 55px;
+        }
+
+        .item11 {
+            grid-area: nav;
+            background-color: antiquewhite;
+        }
+
+        .item12 {
+            grid-area: sideleft;
+            background-color: aqua;
+        }
+
+        .item13 {
+            grid-area: article;
+            background-color: aquamarine;
+        }
+
+        .item14 {
+            grid-area: sideright;
+            background-color: azure;
+        }
+
+        .item15 {
+            grid-area: foot;
+            background-color: beige;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="item item-1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item item-4">4</div>
+        <div class="item">5</div>
+    </div>
+    <div class="container2">
+        <div class="item1 item11">1</div>
+        <div class="item1 item12">2</div>
+        <div class="item1 item13">3</div>
+        <div class="item1 item14">4</div>
+        <div class="item1 item15">5</div>
+    </div>
+</body>
+</html>
