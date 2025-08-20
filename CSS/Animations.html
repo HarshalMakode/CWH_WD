@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        .container {
+            background-color: rgb(9, 106, 106);
+            height: 80vh;
+            width: 30vw;
+        }
+
+        .box {
+            width: 34px;
+            height: 45px;
+            /* background-color: aquamarine; */
+            /* animation-name: anime;
+            animation-duration: 3s;
+            animation-iteration-count: 3; 
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+            animation-timing-function: cubic-bezier(0.42, 0, 0, 1.09);
+            animation-delay: 3s;
+            animation-direction: alternate-reverse;
+            animation-play-state: paused; */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            /* animation: anime 1s ease-in-out 1s infinite alternate-reverse forwards; */
+            animation: anime 2s ease-in-out 3s 1,
+                       anime2 3s ease-in-out 3s 1;
+
+        }
+
+        @keyframes anime {
+            from {
+                background-color: antiquewhite;
+            }
+
+            to {
+                background-color: aquamarine;
+                transform: translateX(1000px);
+            }
+        }
+
+        @keyframes anime2 {
+            0% {
+                transform: rotate(100deg);
+            }
+
+            20% {
+                transform: rotate(200deg);
+            }
+
+            50% {
+                transform: rotate(220deg);
+            }
+
+            80% {
+                transform: rotate(300deg);
+            }
+
+            100% {
+                transform: rotate(310deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box translate">
+
+        </div>
+    </div>
+</body>
+
+</html>
